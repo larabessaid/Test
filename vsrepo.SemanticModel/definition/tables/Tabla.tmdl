@@ -17,6 +17,14 @@ table Tabla
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Columna 2' = Tabla[Columna]/4
+		lineageTag: 41f1c114-2ae9-447a-b0d0-44beb3104e3f
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition Tabla = m
 		mode: import
 		source =

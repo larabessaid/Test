@@ -10,6 +10,13 @@ table Tabla
 
 		annotation SummarizationSetBy = Automatic
 
+	column Columna = Tabla[Columna1]*2
+		formatString: 0
+		lineageTag: 86b2c63d-42ca-4e38-8e03-12ea69b6da8f
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Tabla = m
 		mode: import
 		source =
